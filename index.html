@@ -13,11 +13,12 @@
         padding: 0;
         color: #0c2a18;
         line-height: 1.6;
+        scroll-behavior: smooth;
     }
 
     .wrapper {
         max-width: 1000px;
-        margin: 50px auto;
+        margin: 40px auto;
         padding: 0 20px 60px 20px;
     }
 
@@ -26,20 +27,63 @@
         font-size: 36px;
         margin-bottom: 10px;
         color: #0c2a18;
-        letter-spacing: 0.6px;
     }
 
     .subhead {
         text-align: center;
         font-size: 16px;
-        color: #4b4b4b;
-        margin-bottom: 40px;
+        color: #444;
+        margin-bottom: 30px;
+    }
+
+    /* ----------------------------------- */
+    /* TOP NAV MENU */
+    /* ----------------------------------- */
+
+    .top-menu {
+        width: 100%;
+        background: #e8f1eb;
+        padding: 10px 5px;
+        display: flex;
+        justify-content: center;
+        gap: 22px;
+        flex-wrap: wrap;
+        border-bottom: 2px solid #cdd9d1;
+        position: sticky;
+        top: 0;
+        z-index: 50;
+    }
+
+    .top-menu a {
+        text-decoration: none;
+        color: #0c2a18;
+        font-weight: bold;
+        font-size: 15px;
+        padding: 6px 10px;
+    }
+
+    .top-menu a:hover {
+        text-decoration: underline;
+    }
+
+    /* ----------------------------------- */
+    /* FAQ BLOCKS */
+    /* ----------------------------------- */
+
+    .section-header {
+        font-size: 28px;
+        font-weight: bold;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        color: #0c2a18;
+        border-bottom: 2px solid #0c2a18;
+        padding-bottom: 5px;
     }
 
     .faq-block {
-        margin-bottom: 40px;
-        padding-bottom: 28px;
-        border-bottom: 1px solid #d7d7d7;
+        padding-bottom: 30px;
+        margin-bottom: 35px;
+        border-bottom: 1px solid #d8d8d8;
     }
 
     .question {
@@ -55,23 +99,26 @@
         white-space: pre-line;
     }
 
-    .answer ul {
+    ul {
         margin: 10px 0 10px 25px;
     }
 
-    /* Micro FAQ Box */
+    /* ----------------------------------- */
+    /* MICRO FAQ */
+    /* ----------------------------------- */
+
     .micro-box {
         margin-top: 60px;
         background: #f4f7f4;
-        border-radius: 10px;
-        padding: 25px 25px 35px 25px;
-        box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+        border-radius: 12px;
+        padding: 30px;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.1);
     }
 
     .micro-title {
         font-size: 26px;
-        font-weight: bold;
         text-align: center;
+        font-weight: bold;
         margin-bottom: 20px;
         color: #0c2a18;
     }
@@ -83,22 +130,25 @@
 
     .micro-table td {
         padding: 12px 8px;
-        border-bottom: 1px solid #dddddd;
+        border-bottom: 1px solid #ddd;
         vertical-align: top;
         font-size: 16px;
     }
 
     .icon {
         font-size: 26px;
-        width: 55px;
+        width: 60px;
     }
 
     @media(max-width: 768px) {
         .wrapper {
-            max-width: 94%;
+            max-width: 95%;
         }
         h1 {
             font-size: 30px;
+        }
+        .section-header {
+            font-size: 22px;
         }
         .question {
             font-size: 18px;
@@ -107,19 +157,29 @@
 </style>
 </head>
 
-
 <body>
+
+<!-- TOP MENU -->
+<div class="top-menu">
+    <a href="#overview">Overview</a>
+    <a href="#benefits">Benefits</a>
+    <a href="#usage">Usage</a>
+    <a href="#taste">Taste</a>
+    <a href="#ingredients">Ingredients</a>
+    <a href="#safety">Safety</a>
+    <a href="#micro">Micro FAQ</a>
+</div>
+
 
 <div class="wrapper">
 
 <h1>Headwater FAQ</h1>
-<div class="subhead">
-Everything you want to know — flavor, function, and how Headwater supports daily performance.
-</div>
+<div class="subhead">Everything you want to know — flavor, function, and how Headwater supports daily performance.</div>
 
-<!-- =========================================== -->
-<!-- FULL FAQ CONTENT (EVERY WORD YOU PROVIDED) -->
-<!-- =========================================== -->
+<!-- ========================================================= -->
+<!-- OVERVIEW -->
+<!-- ========================================================= -->
+<div id="overview" class="section-header">Overview</div>
 
 <div class="faq-block">
     <div class="question">What is Headwater?</div>
@@ -148,6 +208,12 @@ Headwater works through steady, nutrition-based support for brain and body syste
     </div>
 </div>
 
+
+<!-- ========================================================= -->
+<!-- BENEFITS -->
+<!-- ========================================================= -->
+<div id="benefits" class="section-header">Benefits</div>
+
 <div class="faq-block">
     <div class="question">How soon will I notice benefits?</div>
     <div class="answer">
@@ -161,6 +227,19 @@ Some people notice a calm, clearer sense of focus early on. More significant ben
 Most people report calm focus, clear thinking, and steady mental energy without jitters or a crash. Benefits often become more noticeable with routine use.
     </div>
 </div>
+
+<div class="faq-block">
+    <div class="question">Who uses it?</div>
+    <div class="answer">
+People who want to support long-term cognitive performance and resilience, including professional athletes, outdoor professionals, creators, students, individuals with high mental demands, and adults 50+ who proactively support healthy cognitive aging.
+    </div>
+</div>
+
+
+<!-- ========================================================= -->
+<!-- USAGE -->
+<!-- ========================================================= -->
+<div id="usage" class="section-header">Usage</div>
 
 <div class="faq-block">
     <div class="question">Is this an energy drink?</div>
@@ -203,11 +282,31 @@ Yes. Many people drink coffee or tea for immediate alertness and use Headwater f
 </div>
 
 <div class="faq-block">
-    <div class="question">Who uses it?</div>
+    <div class="question">How often should I drink it?</div>
     <div class="answer">
-People who want to support long-term cognitive performance and resilience, including professional athletes, outdoor professionals, creators, students, individuals with high mental demands, and adults 50+ who proactively support healthy cognitive aging.
+Many people drink Headwater daily. Benefits associated with Lion’s Mane and Chaga are strongest with consistent routine use.
     </div>
 </div>
+
+<div class="faq-block">
+    <div class="question">Can I drink more than one per day?</div>
+    <div class="answer">
+Yes. Many people enjoy one to two cans daily depending on their schedule, cognitive load, and training demands.
+    </div>
+</div>
+
+<div class="faq-block">
+    <div class="question">Do I need to cycle it?</div>
+    <div class="answer">
+No. Headwater isn’t stimulant-based and does not accumulate tolerance. It is intended for continuous use.
+    </div>
+</div>
+
+
+<!-- ========================================================= -->
+<!-- TASTE -->
+<!-- ========================================================= -->
+<div id="taste" class="section-header">Taste</div>
 
 <div class="faq-block">
     <div class="question">What does it taste like?</div>
@@ -230,47 +329,11 @@ Headwater is lightly sweetened with 5g of natural agave per can. There are no ar
     </div>
 </div>
 
-<div class="faq-block">
-    <div class="question">Is it safe?</div>
-    <div class="answer">
-Lion’s Mane and Chaga are widely used and generally well-tolerated. Those who are pregnant, nursing, on medication, or managing a health condition should consult a healthcare professional.
-    </div>
-</div>
 
-<div class="faq-block">
-    <div class="question">Can kids drink it?</div>
-    <div class="answer">
-Headwater is formulated for adults. If considering it for minors, consult a pediatric healthcare provider.
-    </div>
-</div>
-
-<div class="faq-block">
-    <div class="question">How often should I drink it?</div>
-    <div class="answer">
-Many people drink Headwater daily. Benefits associated with Lion’s Mane and Chaga are strongest with consistent routine use.
-    </div>
-</div>
-
-<div class="faq-block">
-    <div class="question">Can I drink more than one per day?</div>
-    <div class="answer">
-Yes. Many people enjoy one to two cans daily depending on their schedule, cognitive load, and training demands.
-    </div>
-</div>
-
-<div class="faq-block">
-    <div class="question">Do I need to cycle it?</div>
-    <div class="answer">
-No. Headwater isn’t stimulant-based and does not accumulate tolerance. It is intended for continuous use.
-    </div>
-</div>
-
-<div class="faq-block">
-    <div class="question">Is it suitable for professional athletes?</div>
-    <div class="answer">
-Yes. Headwater contains no banned stimulants and supports neural pathways, antioxidant defenses, and recovery processes important for high-performance lifestyles and training loads.
-    </div>
-</div>
+<!-- ========================================================= -->
+<!-- INGREDIENTS -->
+<!-- ========================================================= -->
+<div id="ingredients" class="section-header">Ingredients</div>
 
 <div class="faq-block">
     <div class="question">Where is it made?</div>
@@ -293,6 +356,39 @@ Yes. We use certified organic fruiting-body extracts rather than mycelium-on-gra
     </div>
 </div>
 
+
+<!-- ========================================================= -->
+<!-- SAFETY -->
+<!-- ========================================================= -->
+<div id="safety" class="section-header">Safety</div>
+
+<div class="faq-block">
+    <div class="question">Is it safe?</div>
+    <div class="answer">
+Lion’s Mane and Chaga are widely used and generally well-tolerated. Those who are pregnant, nursing, on medication, or managing a health condition should consult a healthcare professional.
+    </div>
+</div>
+
+<div class="faq-block">
+    <div class="question">Can kids drink it?</div>
+    <div class="answer">
+Headwater is formulated for adults. If considering it for minors, consult a pediatric healthcare provider.
+    </div>
+</div>
+
+<div class="faq-block">
+    <div class="question">Is it suitable for professional athletes?</div>
+    <div class="answer">
+Yes. Headwater contains no banned stimulants and supports neural pathways, antioxidant defenses, and recovery processes important for high-performance lifestyles and training loads.
+    </div>
+</div>
+
+
+<!-- ========================================================= -->
+<!-- STORAGE -->
+<!-- ========================================================= -->
+<div id="storage" class="section-header">Storage</div>
+
 <div class="faq-block">
     <div class="question">How should I store and drink it?</div>
     <div class="answer">
@@ -307,11 +403,13 @@ Yes. Headwater is gently effervescent — lighter than sparkling water for easy 
     </div>
 </div>
 
-<!-- =========================================== -->
-<!-- MICRO-FAQ SECTION (INCLUDED AS REQUESTED) -->
-<!-- =========================================== -->
 
-<div class="micro-box">
+<!-- ========================================================= -->
+<!-- MICRO FAQ -->
+<!-- ========================================================= -->
+
+<div id="micro" class="micro-box">
+
     <div class="micro-title">Quick Benefits Overview</div>
 
     <table class="micro-table">
@@ -341,13 +439,13 @@ Yes. Headwater is gently effervescent — lighter than sparkling water for easy 
         </tr>
     </table>
 
-    <div style="margin-top: 25px; font-size: 15px; color: #333; line-height: 1.6;">
+    <div style="margin-top:25px; font-size:15px; color:#333;">
 Lion’s Mane compounds have been studied for their influence on nerve growth factor (NGF) pathways and synaptic health. Chaga contains antioxidants and beta-glucans associated with immune regulation and cellular protection. Headwater uses concentrated mushroom extracts selected for purity and efficacy, based on emerging nutritional neuroscience and functional mycology research.
     </div>
+
 </div>
 
-<!-- END WRAPPER -->
-</div>
+</div> <!-- END WRAPPER -->
 
 </body>
 </html>
