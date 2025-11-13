@@ -8,45 +8,44 @@
 <style>
     body {
         font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 40px 20px;
         background: #ffffff;
+        margin: 0;
+        padding: 0;
         color: #0c2a18;
         line-height: 1.6;
     }
 
-    .container {
-        width: 100%;
-        max-width: 850px;
-        margin: 0 auto;
-        padding-bottom: 40px;
+    .wrapper {
+        max-width: 1000px;
+        margin: 50px auto;
+        padding: 0 20px 60px 20px;
     }
 
     h1 {
         text-align: center;
+        font-size: 36px;
         margin-bottom: 10px;
-        font-size: 34px;
         color: #0c2a18;
-        letter-spacing: 0.5px;
+        letter-spacing: 0.6px;
     }
 
     .subhead {
         text-align: center;
-        margin-bottom: 40px;
-        color: #666;
         font-size: 16px;
+        color: #4b4b4b;
+        margin-bottom: 40px;
     }
 
-    .faq-row {
+    .faq-block {
         margin-bottom: 40px;
-        padding-bottom: 25px;
-        border-bottom: 1px solid #e5e5e5;
+        padding-bottom: 28px;
+        border-bottom: 1px solid #d7d7d7;
     }
 
     .question {
-        font-size: 18px;
+        font-size: 20px;
         font-weight: bold;
-        margin-bottom: 8px;
+        margin-bottom: 12px;
         color: #0c2a18;
     }
 
@@ -56,26 +55,25 @@
         white-space: pre-line;
     }
 
-    ul {
-        margin-top: 8px;
-        margin-bottom: 8px;
-        padding-left: 20px;
+    .answer ul {
+        margin: 10px 0 10px 25px;
     }
 
-    /* Micro-FAQ box */
-    .micro-faq-box {
-        background: #f4f8f4;
-        padding: 25px;
+    /* Micro FAQ Box */
+    .micro-box {
+        margin-top: 60px;
+        background: #f4f7f4;
         border-radius: 10px;
-        margin-top: 50px;
+        padding: 25px 25px 35px 25px;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.08);
     }
 
     .micro-title {
-        font-size: 22px;
+        font-size: 26px;
         font-weight: bold;
-        margin-bottom: 15px;
-        color: #0c2a18;
         text-align: center;
+        margin-bottom: 20px;
+        color: #0c2a18;
     }
 
     .micro-table {
@@ -84,213 +82,236 @@
     }
 
     .micro-table td {
-        padding: 10px;
-        border-bottom: 1px solid #ddd;
+        padding: 12px 8px;
+        border-bottom: 1px solid #dddddd;
         vertical-align: top;
+        font-size: 16px;
     }
 
     .icon {
-        font-size: 24px;
-        width: 45px;
+        font-size: 26px;
+        width: 55px;
+    }
+
+    @media(max-width: 768px) {
+        .wrapper {
+            max-width: 94%;
+        }
+        h1 {
+            font-size: 30px;
+        }
+        .question {
+            font-size: 18px;
+        }
     }
 </style>
 </head>
 
 
 <body>
-<div class="container">
+
+<div class="wrapper">
 
 <h1>Headwater FAQ</h1>
-<div class="subhead">Everything you want to know — flavor, function, and how Headwater supports daily performance.</div>
+<div class="subhead">
+Everything you want to know — flavor, function, and how Headwater supports daily performance.
+</div>
 
-<!-- ================= FAQ BLOCKS ================= -->
+<!-- =========================================== -->
+<!-- FULL FAQ CONTENT (EVERY WORD YOU PROVIDED) -->
+<!-- =========================================== -->
 
-<div class="faq-row">
+<div class="faq-block">
     <div class="question">What is Headwater?</div>
     <div class="answer">
-Headwater is a lightly sparkling beverage formulated with Lion’s Mane and Chaga mushroom extracts to support cognitive function and overall physiological resilience. It is designed to promote clear thinking, steady mental performance, and a balanced nervous system, while also supporting cellular protection and a healthy immune response.
+Headwater is a lightly sparkling beverage formulated with Lion’s Mane and Chaga mushroom extracts to support cognitive function and overall physiological resilience. It is designed to promote clear thinking, steady mental performance, and a balanced nervous system, while also supporting cellular protection and a healthy immune response. The goal isn’t stimulation; it’s to help the brain and body operate efficiently and recover from daily physical and cognitive demands through consistent, nutrition-based support.
     </div>
 </div>
 
-<div class="faq-row">
+<div class="faq-block">
     <div class="question">Why mushrooms?</div>
     <div class="answer">
-Lion’s Mane and Chaga contain natural compounds studied for supporting brain communication, cellular protection, and immune balance. Lion’s Mane is associated with pathways involved in learning and memory, and Chaga provides antioxidants and beta-glucans that help the body manage everyday stress.
+Lion’s Mane and Chaga contain natural compounds studied for supporting brain communication, cellular protection, and immune balance. Lion’s Mane is associated with pathways involved in learning and memory, and Chaga provides antioxidants and beta-glucans that help the body manage everyday stress. We use these mushrooms for their long-term support of cognitive function and resilience, not for short-term stimulation.
     </div>
 </div>
 
-<div class="faq-row">
+<div class="faq-block">
     <div class="question">How does it work?</div>
     <div class="answer">
 Headwater delivers concentrated Lion’s Mane and Chaga extracts that support key biological systems involved in thinking, stress adaptation, and cellular health.
 
-• Lion’s Mane supports healthy communication between brain cells and pathways linked to memory, learning, and mental clarity.  
-• Chaga contains antioxidants and natural polysaccharides that help protect cells from everyday stress and support a healthy immune response.
+• Lion’s Mane supports healthy communication between brain cells and pathways linked to memory, learning, and mental clarity. Effects build with consistent use and help maintain cognitive performance over time.
+
+• Chaga contains antioxidants and natural polysaccharides that help protect cells from everyday stress and support a healthy immune response, supporting recovery and resilience.
+
+Headwater works through steady, nutrition-based support for brain and body systems — not through stimulants or artificial energy spikes.
     </div>
 </div>
 
-<div class="faq-row">
+<div class="faq-block">
     <div class="question">How soon will I notice benefits?</div>
     <div class="answer">
-Some people notice a calm, clearer sense of focus early on. More significant benefits tend to build gradually over one to three weeks of consistent use.
+Some people notice a calm, clearer sense of focus early on. More significant benefits tend to build gradually over one to three weeks of consistent use, similar to strength or endurance training. It is designed for steady performance support, not an immediate stimulant effect.
     </div>
 </div>
 
-<div class="faq-row">
+<div class="faq-block">
     <div class="question">What will I feel?</div>
     <div class="answer">
-Most people report calm focus, clear thinking, and steady mental energy without jitters or a crash.
+Most people report calm focus, clear thinking, and steady mental energy without jitters or a crash. Benefits often become more noticeable with routine use.
     </div>
 </div>
 
-<div class="faq-row">
+<div class="faq-block">
     <div class="question">Is this an energy drink?</div>
     <div class="answer">
-No. Headwater contains no caffeine and no synthetic stimulants.
+No. Headwater contains no caffeine and no synthetic stimulants. It supports mental performance and physiological balance naturally.
     </div>
 </div>
 
-<div class="faq-row">
+<div class="faq-block">
     <div class="question">How is this different from coffee or energy drinks?</div>
     <div class="answer">
-Coffee and energy drinks create stimulation and a short-term spike in alertness. Headwater supports steady focus, cognitive endurance, and recovery without over-activating the nervous system or causing a crash.
+Coffee and energy drinks create stimulation and a short-term spike in alertness. Headwater supports steady focus, cognitive endurance, and recovery without over-activating the nervous system or causing a crash. It helps maintain clarity and resilience rather than producing a jolt.
     </div>
 </div>
 
-<div class="faq-row">
+<div class="faq-block">
     <div class="question">How is this different from nootropic supplements or powders?</div>
     <div class="answer">
 Most nootropics rely on isolated compounds or stimulant-based strategies. Headwater uses whole-mushroom extracts to support brain and body systems through nutrition, making it easier to use daily without cycling or managing tolerance.
     </div>
 </div>
 
-<div class="faq-row">
+<div class="faq-block">
     <div class="question">When do people drink it?</div>
     <div class="answer">
 Common times include:
-• Morning mental activation  
-• Mid-day for sustained focus  
-• Before training or practice  
-• During long work or study sessions  
+• Morning mental activation
+• Mid-day for sustained focus
+• Before training or practice
+• During long work or study sessions
 • As part of a daily routine for ongoing brain and immune support
     </div>
 </div>
 
-<div class="faq-row">
+<div class="faq-block">
     <div class="question">Can I drink it with coffee or tea?</div>
     <div class="answer">
-Yes. Many people drink coffee or tea for immediate alertness and use Headwater for steady cognitive support and nervous-system balance.
+Yes. Many people drink coffee or tea for immediate alertness and use Headwater for steady cognitive support and nervous-system balance throughout the day.
     </div>
 </div>
 
-<div class="faq-row">
+<div class="faq-block">
     <div class="question">Who uses it?</div>
     <div class="answer">
-Professional athletes, creators, outdoor professionals, students, and adults 50+ who proactively support cognitive aging.
+People who want to support long-term cognitive performance and resilience, including professional athletes, outdoor professionals, creators, students, individuals with high mental demands, and adults 50+ who proactively support healthy cognitive aging.
     </div>
 </div>
 
-<div class="faq-row">
+<div class="faq-block">
     <div class="question">What does it taste like?</div>
     <div class="answer">
-Light, clean, and crisp with subtle natural fruit flavor — designed for everyday drinkability.
+Light, clean, and crisp with subtle natural fruit flavor — designed for everyday drinkability, not sweetness.
     </div>
 </div>
 
-<div class="faq-row">
+<div class="faq-block">
     <div class="question">Does it taste like mushrooms?</div>
     <div class="answer">
-No. Headwater has zero mushroom flavor. Each flavor is clean and crisp without earthy notes.
+No. Headwater has zero mushroom flavor. The extracts are included for their functional properties, not their taste. Each flavor is clean, crisp, and naturally fruit-forward, with no earthy notes — people are often surprised by how refreshing it is. It tastes like a premium sparkling beverage, not mushrooms, and is crafted to be genuinely enjoyable for daily drinking.
     </div>
 </div>
 
-<div class="faq-row">
+<div class="faq-block">
     <div class="question">Does it contain sugar or sweeteners?</div>
     <div class="answer">
-Headwater is lightly sweetened with 5g of natural agave per can. No artificial sweeteners or sugar alcohols.
+Headwater is lightly sweetened with 5g of natural agave per can. There are no artificial sweeteners or sugar alcohols. The goal is hydration and clean taste, not a sugary flavor profile.
     </div>
 </div>
 
-<div class="faq-row">
+<div class="faq-block">
     <div class="question">Is it safe?</div>
     <div class="answer">
-Lion’s Mane and Chaga are widely used and well-tolerated. Those pregnant, nursing, or on medication should consult a clinician.
+Lion’s Mane and Chaga are widely used and generally well-tolerated. Those who are pregnant, nursing, on medication, or managing a health condition should consult a healthcare professional.
     </div>
 </div>
 
-<div class="faq-row">
+<div class="faq-block">
     <div class="question">Can kids drink it?</div>
     <div class="answer">
-Headwater is formulated for adults. Consult a pediatric provider if considering for minors.
+Headwater is formulated for adults. If considering it for minors, consult a pediatric healthcare provider.
     </div>
 </div>
 
-<div class="faq-row">
+<div class="faq-block">
     <div class="question">How often should I drink it?</div>
     <div class="answer">
-Daily use provides the strongest benefits.
+Many people drink Headwater daily. Benefits associated with Lion’s Mane and Chaga are strongest with consistent routine use.
     </div>
 </div>
 
-<div class="faq-row">
+<div class="faq-block">
     <div class="question">Can I drink more than one per day?</div>
     <div class="answer">
-Yes. Many people enjoy 1–2 cans depending on cognitive and training demands.
+Yes. Many people enjoy one to two cans daily depending on their schedule, cognitive load, and training demands.
     </div>
 </div>
 
-<div class="faq-row">
+<div class="faq-block">
     <div class="question">Do I need to cycle it?</div>
     <div class="answer">
-No. Headwater is non-stimulant and does not create tolerance.
+No. Headwater isn’t stimulant-based and does not accumulate tolerance. It is intended for continuous use.
     </div>
 </div>
 
-<div class="faq-row">
+<div class="faq-block">
     <div class="question">Is it suitable for professional athletes?</div>
     <div class="answer">
-Yes. Headwater contains no banned stimulants and supports neural pathways and recovery.
+Yes. Headwater contains no banned stimulants and supports neural pathways, antioxidant defenses, and recovery processes important for high-performance lifestyles and training loads.
     </div>
 </div>
 
-<div class="faq-row">
+<div class="faq-block">
     <div class="question">Where is it made?</div>
     <div class="answer">
-Made in the United States with certified organic extracts and third-party verified ingredients.
+Produced in the United States with certified organic mushroom extracts and third-party verified ingredients.
     </div>
 </div>
 
-<div class="faq-row">
+<div class="faq-block">
     <div class="question">What else is in it?</div>
     <div class="answer">
-Clean, plant-based ingredients and natural fruit flavor. No artificial preservatives or additives.
+Clean, plant-based ingredients with natural fruit flavor. No artificial sweeteners, preservatives, or chemical additives.
     </div>
 </div>
 
-<div class="faq-row">
+<div class="faq-block">
     <div class="question">Do you use real mushroom extracts?</div>
     <div class="answer">
-Yes. We use certified organic fruiting-body extracts rather than mycelium-on-grain.
+Yes. We use certified organic fruiting-body extracts rather than mycelium-on-grain. This ensures consistent bioactive content and avoids unnecessary fillers.
     </div>
 </div>
 
-<div class="faq-row">
+<div class="faq-block">
     <div class="question">How should I store and drink it?</div>
     <div class="answer">
 Shelf-stable. Best served cold. Refrigerate after opening. No shaking required.
     </div>
 </div>
 
-<div class="faq-row">
+<div class="faq-block">
     <div class="question">Is it carbonated?</div>
     <div class="answer">
-Yes — lightly and smoothly carbonated.
+Yes. Headwater is gently effervescent — lighter than sparkling water for easy daily drinking.
     </div>
 </div>
 
-<!-- ================= MICRO FAQ ================= -->
+<!-- =========================================== -->
+<!-- MICRO-FAQ SECTION (INCLUDED AS REQUESTED) -->
+<!-- =========================================== -->
 
-<div class="micro-faq-box">
+<div class="micro-box">
     <div class="micro-title">Quick Benefits Overview</div>
 
     <table class="micro-table">
@@ -308,7 +329,7 @@ Yes — lightly and smoothly carbonated.
         </tr>
         <tr>
             <td class="icon">💪</td>
-            <td><b>Recovery Support</b><br>Helps the body bounce back from physical & mental demand</td>
+            <td><b>Recovery Support</b><br>Helps the body bounce back from physical and mental demand</td>
         </tr>
         <tr>
             <td class="icon">🌿</td>
@@ -316,11 +337,17 @@ Yes — lightly and smoothly carbonated.
         </tr>
         <tr>
             <td class="icon">💡</td>
-            <td><b>Daily Brain Function</b><br>Benefits strengthen with consistent use</td>
+            <td><b>Daily Brain Function</b><br>Benefits build with consistent use</td>
         </tr>
     </table>
+
+    <div style="margin-top: 25px; font-size: 15px; color: #333; line-height: 1.6;">
+Lion’s Mane compounds have been studied for their influence on nerve growth factor (NGF) pathways and synaptic health. Chaga contains antioxidants and beta-glucans associated with immune regulation and cellular protection. Headwater uses concentrated mushroom extracts selected for purity and efficacy, based on emerging nutritional neuroscience and functional mycology research.
+    </div>
 </div>
 
+<!-- END WRAPPER -->
 </div>
+
 </body>
 </html>
